@@ -13,7 +13,7 @@ BOLT_FONT = QtGui.QFont()
 BOLT_FONT.setFamily("Consolas")
 BOLT_FONT.setWeight(100)
 
-ICON_PATH = utils.get_icon_path("MM_icon.png")
+# ICON_PATH = utils.get_icon_path("MM_icon.png")
 FILE_ICON_PATH = ":/fileOpen.png"
 ORANGE_STYLESHEET = "color: orange; text-align: left"
 
@@ -302,7 +302,7 @@ class MayaModuleManager(QtWidgets.QWidget):
         self.setParent(parent)        
         self.setWindowFlags(QtCore.Qt.Window)
         self.setWindowTitle("Maya Module Manager")
-        self.setWindowIcon(QtGui.QIcon(ICON_PATH))
+        # self.setWindowIcon(QtGui.QIcon(ICON_PATH))
         self.resize(700 * scale_factor, 400 * scale_factor)
 
         # create container layout
