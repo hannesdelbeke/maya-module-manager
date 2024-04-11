@@ -1,12 +1,19 @@
 # maya-module-manager
 Module manager for Maya.
 
+
 ## Installation
-* Extract the content of the .rar file anywhere on disk.
-* Drag the module-manager.mel file in Maya to permanently install the script.
+- put the module_manager folder in a scripts folder
+- - run code to show module manager
+```python
+import module_manager
+window = module_manager.show()
+```
 
 ## Usage
 <p align="center"><img src="docs/_images/module-manager-example.png?raw=true"></p>
+
+
 
 Modules can be (de)activated by toggling the checkbox **[2]**. The user is also presented with other information regarding the module, its version, the maya version, platform and language. By default the manager will only show you modules that are compatible with the version of Maya you are running, by toggling the `show all` checkbox all modules associated with the file can be edited. Press the folder to open the module file with the associated application. This will make it possible to easily edit the file manually if need be **[4]**.
 

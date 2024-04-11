@@ -341,3 +341,4 @@ def show():
     parent = utils.get_main_window()
     window = MayaModuleManager(parent)
     window.show()
+    return window
