@@ -6,8 +6,8 @@ Module manager for Maya.
 - put the module_manager folder in a scripts folder
 - - run code to show module manager
 ```python
-import module_manager
-window = module_manager.show()
+import module_manager.ui
+window = module_manager.ui.show()
 ```
 
 ## Usage
