@@ -16,7 +16,7 @@ FONT = QtGui.QFont()
 FONT.setFamily("Consolas")
 BOLT_FONT = QtGui.QFont()
 BOLT_FONT.setFamily("Consolas")
-BOLT_FONT.setWeight(100)
+# BOLT_FONT.setWeight(100)
 
 # ICON_PATH = utils.get_icon_path("MM_icon.png")
 FILE_ICON_PATH = ":/fileOpen.png"
