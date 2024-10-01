@@ -1,7 +1,0 @@
-module\_manager\.utils module
-=============================
-
-.. automodule:: module_manager.utils
-    :members:
-    :undoc-members:
-    :show-inheritance:

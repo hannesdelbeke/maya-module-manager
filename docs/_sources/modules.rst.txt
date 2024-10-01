@@ -1,7 +1,0 @@
-module_manager
-==============
-
-.. toctree::
-   :maxdepth: 4
-
-   module_manager

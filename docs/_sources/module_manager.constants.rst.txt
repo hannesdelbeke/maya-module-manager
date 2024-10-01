@@ -1,7 +1,0 @@
-module\_manager\.constants module
-=================================
-
-.. automodule:: module_manager.constants
-    :members:
-    :undoc-members:
-    :show-inheritance:
