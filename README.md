@@ -16,3 +16,6 @@ Modules can be (de)activated by toggling the checkbox **[2]**. The user is also 
 The file itself can be managed directly by pressing the folder button next to the module filename **[1]**. Doing this will open up the file in the associated application. It is also possible to dive directly into the module code itself by pressing the folder button **[3]**. This will open up the folder of the module content in your browser.
 
 This manager edits the module files on disk, it is possible that the user won't have permissions to edit the module files. If this is the case the module will still be displayed but the widget is disabled preventing the user from editing the file **[5]**.
+
+## plugget
+[manifest](https://github.com/plugget/plugget-pkgs/tree/main/maya/module-manager)
