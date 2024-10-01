@@ -18,4 +18,5 @@ The file itself can be managed directly by pressing the folder button next to th
 This manager edits the module files on disk, it is possible that the user won't have permissions to edit the module files. If this is the case the module will still be displayed but the widget is disabled preventing the user from editing the file **[5]**.
 
 ## plugget
-[manifest](https://github.com/plugget/plugget-pkgs/tree/main/maya/module-manager)
+- supports 1 click install with [plugget maya](https://github.com/plugget/plugget-qt-maya-plugin)
+- [plugget manifest](https://github.com/plugget/plugget-pkgs/tree/main/maya/module-manager)
