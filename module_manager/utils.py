@@ -1,9 +1,13 @@
 import os
-import shiboken2
 from six import integer_types
 from maya import OpenMayaUI
-from PySide2 import QtWidgets, QtGui, QtCore
-
+try:
+    import shiboken2 as shiboken
+    from PySide2 import QtWidgets, QtGui, QtCore
+except:
+    import shiboken6 as shiboken
+    from PySide6 import QtWidgets, QtGui, QtCore
+    
 from module_manager.constants import MODULE_ARGUMENTS
 
 
@@ -16,7 +20,7 @@ def get_main_window():
     ptr = OpenMayaUI.MQtUtil.mainWindow()
     ptr = integer_types[-1](ptr)
     if ptr:
-        return shiboken2.wrapInstance(ptr, QtWidgets.QMainWindow)
+        return shiboken.wrapInstance(ptr, QtWidgets.QMainWindow)
 
     raise RuntimeError("Failed to obtain a handle on the Maya main window.")
 
