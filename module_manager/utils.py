@@ -1,5 +1,5 @@
 import os
-from six import integer_types
+# from six import integer_types
 from maya import OpenMayaUI
 try:
     import shiboken2 as shiboken
@@ -18,7 +18,7 @@ def get_main_window():
     :raise RuntimeError: When the main window cannot be obtained.
     """
     ptr = OpenMayaUI.MQtUtil.mainWindow()
-    ptr = integer_types[-1](ptr)
+    ptr = int(ptr)
     if ptr:
         return shiboken.wrapInstance(ptr, QtWidgets.QMainWindow)
 
