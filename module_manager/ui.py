@@ -1,7 +1,12 @@
 import os
 import webbrowser
 from functools import partial
-from PySide2 import QtWidgets, QtGui, QtCore
+
+try:
+    from PySide2 import QtWidgets, QtGui, QtCore
+except:
+    from PySide6 import QtWidgets, QtGui, QtCore
+    
 
 from module_manager import utils
 from module_manager.constants import MAYA_ARGUMENTS
