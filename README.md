@@ -1,6 +1,8 @@
 # maya-module-manager
-Module manager for Maya.
+Module manager for Maya.  
+docs https://robertjoosten.github.io/maya-module-manager/
 
+<img src="https://github.com/hannesdelbeke/maya-module-manager/blob/docs/docs/_images/module-manager-example.png?raw=true"></p>
 
 ## Installation
 - put the module_manager folder in a plugin folder
@@ -9,7 +11,6 @@ Module manager for Maya.
 ## Usage
 - open the tool from the menu `Windows/Module Manager`
 
-<p align="center"><img src="https://github.com/hannesdelbeke/maya-module-manager/blob/docs/docs/_images/module-manager-example.png?raw=true"></p>
 
 Modules can be (de)activated by toggling the checkbox **[2]**. The user is also presented with other information regarding the module, its version, the maya version, platform and language. By default the manager will only show you modules that are compatible with the version of Maya you are running, by toggling the `show all` checkbox all modules associated with the file can be edited. Press the folder to open the module file with the associated application. This will make it possible to easily edit the file manually if need be **[4]**.
 
