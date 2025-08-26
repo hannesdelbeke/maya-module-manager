@@ -596,7 +596,7 @@ def loadMenu():
 
     # Maya builds its menus dynamically upon being accessed, so they don't exist if not yet accessed.
     # We force a menu build to allow parenting any new menu under a default Maya menu
-    mel.eval("evalDeferred buildFileMenu")  # delete this if not parenting menus to a default Maya Menu
+    mel.eval("global string $gMainWindowMenu;buildViewMenu ( $gMainWindowMenu );")
 
     # if not cmds.menu(f"{MENU_PARENT}|{MENU_NAME}", exists=True):
     #     cmds.menu(MENU_NAME, label=MENU_LABEL, parent=MENU_PARENT)
