@@ -25,6 +25,8 @@ MAYA_ARGUMENTS = {
     "LOCALE": cmds.about(uiLanguage=True),
 }
 
+MOD_EXTENSIONS = ("mod")  # lowercase only
+
 
 # ----------------------UTILS---------------------------------
 
@@ -96,7 +98,7 @@ def get_module_file_paths():
             [
                 os.path.normpath(os.path.join(path, f))
                 for f in os.listdir(path) or []
-                if f.lower().endswith("mod") and not f.startswith("moduleManager")
+                if f.lower().endswith(MOD_EXTENSIONS) and not f.startswith("moduleManager")
             ]
         )
 
